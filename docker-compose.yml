@@ -1,0 +1,10 @@
+services:
+  yt-dc-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - DISCORD_TOKEN=${DISCORD_TOKEN}
+        - DATABASE_URL=${DATABASE_URL}
+    env_file:
+      - .env

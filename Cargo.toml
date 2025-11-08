@@ -1,0 +1,32 @@
+[package]
+edition = "2024"
+name = "yt-dc-bot"
+version = "0.1.0"
+
+[dependencies]
+anyhow = "1.0.100"
+async-trait = "0.1.89"
+dotenvy = "0.15.7"
+poise = { version = "0.6", default-features = false, features = ["cache"] }
+reqwest = "0.12.24"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serenity = { features = [
+    "cache",
+    "framework",
+    "http",
+    "rustls_backend",
+    "standard_framework",
+    "voice",
+], version = "0.12" }
+songbird = { version = "0.5.0", features = ["builtin-queue", "serenity"] }
+symphonia = { features = ["aac", "alac", "isomp4", "mp3"], version = "0.5.2" }
+tokio = { features = [
+    "macros",
+    "rt-multi-thread",
+    "signal",
+    "sync",
+], version = "1" }
+tracing = "0.1"
+tracing-futures = "0.2"
+tracing-subscriber = "0.3"
