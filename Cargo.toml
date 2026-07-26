@@ -19,7 +19,7 @@ serenity = { features = [
     "standard_framework",
     "voice",
 ], version = "0.12" }
-songbird = { version = "0.5.0", features = ["builtin-queue", "serenity"] }
+songbird = { version = "0.6.0", features = ["builtin-queue", "serenity"] }
 symphonia = { features = ["aac", "alac", "isomp4", "mp3"], version = "0.5.2" }
 tokio = { features = [
     "macros",
