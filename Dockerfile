@@ -1,6 +1,6 @@
 FROM rust:latest as rust-builder
 WORKDIR /usr/src/yt-dc-bot
-RUN apt update && apt install -y libopus-dev
+RUN apt update && apt install -y libopus-dev cmake
 COPY . .
 RUN cargo build --release
 
